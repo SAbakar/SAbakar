@@ -1,0 +1,15 @@
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\bin\Release\net5.0\Contracts.deps.json
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\bin\Release\net5.0\Contracts.dll
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\bin\Release\net5.0\ref\Contracts.dll
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\bin\Release\net5.0\Contracts.pdb
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\bin\Release\net5.0\Entities.dll
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\bin\Release\net5.0\Entities.pdb
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\obj\Release\net5.0\Contracts.csprojAssemblyReference.cache
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\obj\Release\net5.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\obj\Release\net5.0\Contracts.AssemblyInfoInputs.cache
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\obj\Release\net5.0\Contracts.AssemblyInfo.cs
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\obj\Release\net5.0\Contracts.csproj.CoreCompileInputs.cache
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\obj\Release\net5.0\Contracts.csproj.CopyComplete
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\obj\Release\net5.0\Contracts.dll
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\obj\Release\net5.0\ref\Contracts.dll
+D:\Developpement\Ramat\RamatBank\RamatBankAPI\Contracts\obj\Release\net5.0\Contracts.pdb

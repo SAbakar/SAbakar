@@ -1,0 +1,1 @@
+dotnet publish  --output \\172.16.1.10\d\webFolders\randje\webapi

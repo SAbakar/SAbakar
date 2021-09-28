@@ -1,0 +1,15 @@
+D:\Developpement\Zaraff\ZeStockAPI\Entities\bin\Debug\net5.0\Entities.deps.json
+D:\Developpement\Zaraff\ZeStockAPI\Entities\bin\Debug\net5.0\Entities.runtimeconfig.json
+D:\Developpement\Zaraff\ZeStockAPI\Entities\bin\Debug\net5.0\Entities.runtimeconfig.dev.json
+D:\Developpement\Zaraff\ZeStockAPI\Entities\bin\Debug\net5.0\Entities.dll
+D:\Developpement\Zaraff\ZeStockAPI\Entities\bin\Debug\net5.0\ref\Entities.dll
+D:\Developpement\Zaraff\ZeStockAPI\Entities\bin\Debug\net5.0\Entities.pdb
+D:\Developpement\Zaraff\ZeStockAPI\Entities\obj\Debug\net5.0\Entities.csprojAssemblyReference.cache
+D:\Developpement\Zaraff\ZeStockAPI\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developpement\Zaraff\ZeStockAPI\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+D:\Developpement\Zaraff\ZeStockAPI\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+D:\Developpement\Zaraff\ZeStockAPI\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+D:\Developpement\Zaraff\ZeStockAPI\Entities\obj\Debug\net5.0\Entities.dll
+D:\Developpement\Zaraff\ZeStockAPI\Entities\obj\Debug\net5.0\ref\Entities.dll
+D:\Developpement\Zaraff\ZeStockAPI\Entities\obj\Debug\net5.0\Entities.pdb
+D:\Developpement\Zaraff\ZeStockAPI\Entities\obj\Debug\net5.0\Entities.genruntimeconfig.cache

@@ -1,0 +1,1643 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Principal</name>
+    </assembly>
+    <members>
+        <member name="M:Principal.Controllers.BCIController.GetAllBCIsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les BCIs avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.BCIController.GetAllBCIs">
+            <summary>
+            Afficher tous les BCIs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.BCIController.GetListAllBCIs">
+            <summary>
+            Afficher la liste de tous les BCIs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.BCIController.GetListAllBCIsById(System.Int32)">
+            <summary>
+            Afficher la liste de BCIs en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idBCI"></param>
+        </member>
+        <member name="M:Principal.Controllers.BCIController.GetBCIById(System.Int32)">
+            <summary>
+            Afficher un(e) BCI en particulier
+            </summary>
+            <returns></returns>
+            <param name="idBCI"></param>
+        </member>
+        <member name="M:Principal.Controllers.BCIController.AjouterBCI(Entities.Models.BCI)">
+            <summary>
+            Creer un(e) BCI
+            </summary>
+            <returns></returns>
+            <param name="bci"></param>
+        </member>
+        <member name="M:Principal.Controllers.BCIController.MAJBCI(System.Int32,Entities.Models.BCI)">
+            <summary>
+            Mise à jour d'un(e) BCI
+            </summary>
+            <returns></returns>
+            <param name="idbci"></param>
+            <param name="bci"></param>
+        </member>
+        <member name="M:Principal.Controllers.BCIController.SupprimerBCI(System.Int32)">
+            <summary>
+            Suppression d'un(e) BCI
+            </summary>
+            <returns></returns>
+            <param name="idbci"></param>
+        </member>
+        <member name="M:Principal.Controllers.BCIController.GetBCICompte">
+            <summary>
+            Retourne le total d'enregistrement de BCI
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueController.GetAllCataloguesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Catalogues avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.CatalogueController.GetAllCatalogues">
+            <summary>
+            Afficher tous les Catalogues
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueController.GetListAllCatalogues">
+            <summary>
+            Afficher la liste de tous les Catalogues
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueController.GetListAllCataloguesById(System.Int32)">
+            <summary>
+            Afficher la liste de Catalogues en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idCatalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueController.GetCatalogueById(System.Int32)">
+            <summary>
+            Afficher un(e) Catalogue en particulier
+            </summary>
+            <returns></returns>
+            <param name="idCatalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueController.AjouterCatalogue(Entities.Models.Catalogue)">
+            <summary>
+            Creer un(e) Catalogue
+            </summary>
+            <returns></returns>
+            <param name="catalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueController.MAJCatalogue(System.Int32,Entities.Models.Catalogue)">
+            <summary>
+            Mise à jour d'un(e) Catalogue
+            </summary>
+            <returns></returns>
+            <param name="idcatalogue"></param>
+            <param name="catalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueController.SupprimerCatalogue(System.Int32)">
+            <summary>
+            Suppression d'un(e) Catalogue
+            </summary>
+            <returns></returns>
+            <param name="idcatalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueController.GetCatalogueCompte">
+            <summary>
+            Retourne le total d'enregistrement de Catalogue
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueProduitController.GetAllCatalogueProduitsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les CatalogueProduits avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.CatalogueProduitController.GetAllCatalogueProduits">
+            <summary>
+            Afficher tous les CatalogueProduits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueProduitController.GetListAllCatalogueProduits">
+            <summary>
+            Afficher la liste de tous les CatalogueProduits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueProduitController.GetListAllCatalogueProduitsById(System.Int32)">
+            <summary>
+            Afficher la liste de CatalogueProduits en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idCatalogueProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueProduitController.GetCatalogueProduitById(System.Int32)">
+            <summary>
+            Afficher un(e) CatalogueProduit en particulier
+            </summary>
+            <returns></returns>
+            <param name="idCatalogueProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueProduitController.AjouterCatalogueProduit(Entities.Models.CatalogueProduit)">
+            <summary>
+            Creer un(e) CatalogueProduit
+            </summary>
+            <returns></returns>
+            <param name="catalogueproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueProduitController.MAJCatalogueProduit(System.Int32,Entities.Models.CatalogueProduit)">
+            <summary>
+            Mise à jour d'un(e) CatalogueProduit
+            </summary>
+            <returns></returns>
+            <param name="idcatalogueproduit"></param>
+            <param name="catalogueproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueProduitController.SupprimerCatalogueProduit(System.Int32)">
+            <summary>
+            Suppression d'un(e) CatalogueProduit
+            </summary>
+            <returns></returns>
+            <param name="idcatalogueproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.CatalogueProduitController.GetCatalogueProduitCompte">
+            <summary>
+            Retourne le total d'enregistrement de CatalogueProduit
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ClientController.GetAllClientsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Clients avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.ClientController.GetAllClients">
+            <summary>
+            Afficher tous les Clients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ClientController.GetListAllClients">
+            <summary>
+            Afficher la liste de tous les Clients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ClientController.GetListAllClientsById(System.Int32)">
+            <summary>
+            Afficher la liste de Clients en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idClient"></param>
+        </member>
+        <member name="M:Principal.Controllers.ClientController.GetClientById(System.Int32)">
+            <summary>
+            Afficher un(e) Client en particulier
+            </summary>
+            <returns></returns>
+            <param name="idClient"></param>
+        </member>
+        <member name="M:Principal.Controllers.ClientController.AjouterClient(Entities.Models.Client)">
+            <summary>
+            Creer un(e) Client
+            </summary>
+            <returns></returns>
+            <param name="idclient"></param>
+        </member>
+        <member name="M:Principal.Controllers.ClientController.MAJClient(System.Int32,Entities.Models.Client)">
+            <summary>
+            Mise à jour d'un(e) Client
+            </summary>
+            <returns></returns>
+            <param name="idclient"></param>
+            <param name="client"></param>
+        </member>
+        <member name="M:Principal.Controllers.ClientController.SupprimerClient(System.Int32)">
+            <summary>
+            Suppression d'un(e) Client
+            </summary>
+            <returns></returns>
+            <param name="idclient"></param>
+        </member>
+        <member name="M:Principal.Controllers.ClientController.GetClientCompte">
+            <summary>
+            Retourne le total d'enregistrement de Client
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.CommandeFournisseurController.GetAllCommandeFournisseursPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les CommandeFournisseurs avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.CommandeFournisseurController.GetAllCommandeFournisseurs">
+            <summary>
+            Afficher tous les CommandeFournisseurs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.CommandeFournisseurController.GetListAllCommandeFournisseurs">
+            <summary>
+            Afficher la liste de tous les CommandeFournisseurs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.CommandeFournisseurController.GetListAllCommandeFournisseursById(System.Int32)">
+            <summary>
+            Afficher la liste de CommandeFournisseurs en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idCommandeFournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.CommandeFournisseurController.GetCommandeFournisseurById(System.Int32)">
+            <summary>
+            Afficher un(e) CommandeFournisseur en particulier
+            </summary>
+            <returns></returns>
+            <param name="idCommandeFournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.CommandeFournisseurController.AjouterCommandeFournisseur(Entities.Models.CommandeFournisseur)">
+            <summary>
+            Creer un(e) CommandeFournisseur
+            </summary>
+            <returns></returns>
+            <param name="commandefournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.CommandeFournisseurController.MAJCommandeFournisseur(System.Int32,Entities.Models.CommandeFournisseur)">
+            <summary>
+            Mise à jour d'un(e) CommandeFournisseur
+            </summary>
+            <returns></returns>
+            <param name="idcommandefournisseur"></param>
+            <param name="commandefournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.CommandeFournisseurController.SupprimerCommandeFournisseur(System.Int32)">
+            <summary>
+            Suppression d'un(e) CommandeFournisseur
+            </summary>
+            <returns></returns>
+            <param name="idcommandefournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.CommandeFournisseurController.GetCommandeFournisseurCompte">
+            <summary>
+            Retourne le total d'enregistrement de CommandeFournisseur
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FactureController.GetAllFacturesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Factures avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.FactureController.GetAllFactures">
+            <summary>
+            Afficher tous les Factures
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FactureController.GetListAllFactures">
+            <summary>
+            Afficher la liste de tous les Factures
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FactureController.GetListAllFacturesById(System.Int32)">
+            <summary>
+            Afficher la liste de Factures en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idFacture"></param>
+        </member>
+        <member name="M:Principal.Controllers.FactureController.GetFactureById(System.Int32)">
+            <summary>
+            Afficher un(e) Facture en particulier
+            </summary>
+            <returns></returns>
+            <param name="idFacture"></param>
+        </member>
+        <member name="M:Principal.Controllers.FactureController.AjouterFacture(Entities.Models.Facture)">
+            <summary>
+            Creer un(e) Facture
+            </summary>
+            <returns></returns>
+            <param name="facture"></param>
+        </member>
+        <member name="M:Principal.Controllers.FactureController.MAJFacture(System.Int32,Entities.Models.Facture)">
+            <summary>
+            Mise à jour d'un(e) Facture
+            </summary>
+            <returns></returns>
+            <param name="idfacture"></param>
+            <param name="facture"></param>
+        </member>
+        <member name="M:Principal.Controllers.FactureController.SupprimerFacture(System.Int32)">
+            <summary>
+            Suppression d'un(e) Facture
+            </summary>
+            <returns></returns>
+            <param name="idfacture"></param>
+        </member>
+        <member name="M:Principal.Controllers.FactureController.GetFactureCompte">
+            <summary>
+            Retourne le total d'enregistrement de Facture
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FamilleController.GetAllFamillesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Familles avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.FamilleController.GetAllFamilles">
+            <summary>
+            Afficher tous les Familles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FamilleController.GetListAllFamilles">
+            <summary>
+            Afficher la liste de tous les Familles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FamilleController.GetListAllFamillesById(System.Int32)">
+            <summary>
+            Afficher la liste de Familles en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idFamille"></param>
+        </member>
+        <member name="M:Principal.Controllers.FamilleController.GetFamilleById(System.Int32)">
+            <summary>
+            Afficher un(e) Famille en particulier
+            </summary>
+            <returns></returns>
+            <param name="idFamille"></param>
+        </member>
+        <member name="M:Principal.Controllers.FamilleController.AjouterFamille(Entities.Models.Famille)">
+            <summary>
+            Creer un(e) Famille
+            </summary>
+            <returns></returns>
+            <param name="famille"></param>
+        </member>
+        <member name="M:Principal.Controllers.FamilleController.MAJFamille(System.Int32,Entities.Models.Famille)">
+            <summary>
+            Mise à jour d'un(e) Famille
+            </summary>
+            <returns></returns>
+            <param name="idfamille"></param>
+            <param name="famille"></param>
+        </member>
+        <member name="M:Principal.Controllers.FamilleController.SupprimerFamille(System.Int32)">
+            <summary>
+            Suppression d'un(e) Famille
+            </summary>
+            <returns></returns>
+            <param name="idfamille"></param>
+        </member>
+        <member name="M:Principal.Controllers.FamilleController.GetFamilleCompte">
+            <summary>
+            Retourne le total d'enregistrement de Famille
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FonctionController.GetAllFonctionsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Fonctions avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.FonctionController.GetAllFonctions">
+            <summary>
+            Afficher tous les Fonctions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FonctionController.GetListAllFonctions">
+            <summary>
+            Afficher la liste de tous les Fonctions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FonctionController.GetListAllFonctionsById(System.Int32)">
+            <summary>
+            Afficher la liste de Fonctions en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idFonction"></param>
+        </member>
+        <member name="M:Principal.Controllers.FonctionController.GetFonctionById(System.Int32)">
+            <summary>
+            Afficher un(e) Fonction en particulier
+            </summary>
+            <returns></returns>
+            <param name="idFonction"></param>
+        </member>
+        <member name="M:Principal.Controllers.FonctionController.AjouterFonction(Entities.Models.Fonction)">
+            <summary>
+            Creer un(e) Fonction
+            </summary>
+            <returns></returns>
+            <param name="fonction"></param>
+        </member>
+        <member name="M:Principal.Controllers.FonctionController.MAJFonction(System.Int32,Entities.Models.Fonction)">
+            <summary>
+            Mise à jour d'un(e) Fonction
+            </summary>
+            <returns></returns>
+            <param name="idfonction"></param>
+            <param name="fonction"></param>
+        </member>
+        <member name="M:Principal.Controllers.FonctionController.SupprimerFonction(System.Int32)">
+            <summary>
+            Suppression d'un(e) Fonction
+            </summary>
+            <returns></returns>
+            <param name="idfonction"></param>
+        </member>
+        <member name="M:Principal.Controllers.FonctionController.GetFonctionCompte">
+            <summary>
+            Retourne le total d'enregistrement de Fonction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FournisseurController.GetAllFournisseursPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Fournisseurs avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.FournisseurController.GetAllFournisseurs">
+            <summary>
+            Afficher tous les Fournisseurs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FournisseurController.GetListAllFournisseurs">
+            <summary>
+            Afficher la liste de tous les Fournisseurs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.FournisseurController.GetListAllFournisseursById(System.Int32)">
+            <summary>
+            Afficher la liste de Fournisseurs en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idFournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.FournisseurController.GetFournisseurById(System.Int32)">
+            <summary>
+            Afficher un(e) Fournisseur en particulier
+            </summary>
+            <returns></returns>
+            <param name="idFournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.FournisseurController.AjouterFournisseur(Entities.Models.Fournisseur)">
+            <summary>
+            Creer un(e) Fournisseur
+            </summary>
+            <returns></returns>
+            <param name="fournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.FournisseurController.MAJFournisseur(System.Int32,Entities.Models.Fournisseur)">
+            <summary>
+            Mise à jour d'un(e) Fournisseur
+            </summary>
+            <returns></returns>
+            <param name="idfournisseur"></param>
+            <param name="fournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.FournisseurController.SupprimerFournisseur(System.Int32)">
+            <summary>
+            Suppression d'un(e) Fournisseur
+            </summary>
+            <returns></returns>
+            <param name="idfournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.FournisseurController.GetFournisseurCompte">
+            <summary>
+            Retourne le total d'enregistrement de Fournisseur
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.MarqueController.GetAllMarquesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Marques avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.MarqueController.GetAllMarques">
+            <summary>
+            Afficher tous les Marques
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.MarqueController.GetListAllMarques">
+            <summary>
+            Afficher la liste de tous les Marques
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.MarqueController.GetListAllMarquesById(System.Int32)">
+            <summary>
+            Afficher la liste de Marques en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idMarque"></param>
+        </member>
+        <member name="M:Principal.Controllers.MarqueController.GetMarqueById(System.Int32)">
+            <summary>
+            Afficher un(e) Marque en particulier
+            </summary>
+            <returns></returns>
+            <param name="idMarque"></param>
+        </member>
+        <member name="M:Principal.Controllers.MarqueController.AjouterMarque(Entities.Models.Marque)">
+            <summary>
+            Creer un(e) Marque
+            </summary>
+            <returns></returns>
+            <param name="marque"></param>
+        </member>
+        <member name="M:Principal.Controllers.MarqueController.MAJMarque(System.Int32,Entities.Models.Marque)">
+            <summary>
+            Mise à jour d'un(e) Marque
+            </summary>
+            <returns></returns>
+            <param name="idmarque"></param>
+            <param name="marque"></param>
+        </member>
+        <member name="M:Principal.Controllers.MarqueController.SupprimerMarque(System.Int32)">
+            <summary>
+            Suppression d'un(e) Marque
+            </summary>
+            <returns></returns>
+            <param name="idmarque"></param>
+        </member>
+        <member name="M:Principal.Controllers.MarqueController.GetMarqueCompte">
+            <summary>
+            Retourne le total d'enregistrement de Marque
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.OrigineController.GetAllOriginesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Origines avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.OrigineController.GetAllOrigines">
+            <summary>
+            Afficher tous les Origines
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.OrigineController.GetListAllOrigines">
+            <summary>
+            Afficher la liste de tous les Origines
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.OrigineController.GetListAllOriginesById(System.Int32)">
+            <summary>
+            Afficher la liste de Origines en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idOrigine"></param>
+        </member>
+        <member name="M:Principal.Controllers.OrigineController.GetOrigineById(System.Int32)">
+            <summary>
+            Afficher un(e) Origine en particulier
+            </summary>
+            <returns></returns>
+            <param name="idOrigine"></param>
+        </member>
+        <member name="M:Principal.Controllers.OrigineController.AjouterOrigine(Entities.Models.Origine)">
+            <summary>
+            Creer un(e) Origine
+            </summary>
+            <returns></returns>
+            <param name="origine"></param>
+        </member>
+        <member name="M:Principal.Controllers.OrigineController.MAJOrigine(System.Int32,Entities.Models.Origine)">
+            <summary>
+            Mise à jour d'un(e) Origine
+            </summary>
+            <returns></returns>
+            <param name="idorigine"></param>
+            <param name="origine"></param>
+        </member>
+        <member name="M:Principal.Controllers.OrigineController.SupprimerOrigine(System.Int32)">
+            <summary>
+            Suppression d'un(e) Origine
+            </summary>
+            <returns></returns>
+            <param name="idorigine"></param>
+        </member>
+        <member name="M:Principal.Controllers.OrigineController.GetOrigineCompte">
+            <summary>
+            Retourne le total d'enregistrement de Origine
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.PersonnelController.GetAllPersonnelsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Personnels avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.PersonnelController.GetAllPersonnels">
+            <summary>
+            Afficher tous les Personnels
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.PersonnelController.GetListAllPersonnels">
+            <summary>
+            Afficher la liste de tous les Personnels
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.PersonnelController.GetListAllPersonnelsById(System.Int32)">
+            <summary>
+            Afficher la liste de Personnels en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idPersonnel"></param>
+        </member>
+        <member name="M:Principal.Controllers.PersonnelController.GetPersonnelById(System.Int32)">
+            <summary>
+            Afficher un(e) Personnel en particulier
+            </summary>
+            <returns></returns>
+            <param name="idPersonnel"></param>
+        </member>
+        <member name="M:Principal.Controllers.PersonnelController.AjouterPersonnel(Entities.Models.Personnel)">
+            <summary>
+            Creer un(e) Personnel
+            </summary>
+            <returns></returns>
+            <param name="personnel"></param>
+        </member>
+        <member name="M:Principal.Controllers.PersonnelController.MAJPersonnel(System.Int32,Entities.Models.Personnel)">
+            <summary>
+            Mise à jour d'un(e) Personnel
+            </summary>
+            <returns></returns>
+            <param name="idpersonnel"></param>
+            <param name="personnel"></param>
+        </member>
+        <member name="M:Principal.Controllers.PersonnelController.SupprimerPersonnel(System.Int32)">
+            <summary>
+            Suppression d'un(e) Personnel
+            </summary>
+            <returns></returns>
+            <param name="idpersonnel"></param>
+        </member>
+        <member name="M:Principal.Controllers.PersonnelController.GetPersonnelCompte">
+            <summary>
+            Retourne le total d'enregistrement de Personnel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ProduitBCIController.GetAllProduitBCIsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les ProduitBCIs avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.ProduitBCIController.GetAllProduitBCIs">
+            <summary>
+            Afficher tous les ProduitBCIs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ProduitBCIController.GetListAllProduitBCIs">
+            <summary>
+            Afficher la liste de tous les ProduitBCIs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ProduitBCIController.GetListAllProduitBCIsById(System.Int32)">
+            <summary>
+            Afficher la liste de ProduitBCIs en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idProduitBCI"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitBCIController.GetProduitBCIById(System.Int32)">
+            <summary>
+            Afficher un(e) ProduitBCI en particulier
+            </summary>
+            <returns></returns>
+            <param name="idProduitBCI"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitBCIController.AjouterProduitBCI(Entities.Models.ProduitBCI)">
+            <summary>
+            Creer un(e) ProduitBCI
+            </summary>
+            <returns></returns>
+            <param name="produitbci"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitBCIController.MAJProduitBCI(System.Int32,Entities.Models.ProduitBCI)">
+            <summary>
+            Mise à jour d'un(e) ProduitBCI
+            </summary>
+            <returns></returns>
+            <param name="idproduitbci"></param>
+            <param name="produitbci"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitBCIController.SupprimerProduitBCI(System.Int32)">
+            <summary>
+            Suppression d'un(e) ProduitBCI
+            </summary>
+            <returns></returns>
+            <param name="idproduitbci"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitBCIController.GetProduitBCICompte">
+            <summary>
+            Retourne le total d'enregistrement de ProduitBCI
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ProduitCommandeFournisseurController.GetAllProduitCommandeFournisseursPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les ProduitCommandeFournisseurs avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.ProduitCommandeFournisseurController.GetAllProduitCommandeFournisseurs">
+            <summary>
+            Afficher tous les ProduitCommandeFournisseurs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ProduitCommandeFournisseurController.GetListAllProduitCommandeFournisseurs">
+            <summary>
+            Afficher la liste de tous les ProduitCommandeFournisseurs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ProduitCommandeFournisseurController.GetListAllProduitCommandeFournisseursById(System.Int32)">
+            <summary>
+            Afficher la liste de ProduitCommandeFournisseurs en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idProduitCommandeFournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitCommandeFournisseurController.GetProduitCommandeFournisseurById(System.Int32)">
+            <summary>
+            Afficher un(e) ProduitCommandeFournisseur en particulier
+            </summary>
+            <returns></returns>
+            <param name="idProduitCommandeFournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitCommandeFournisseurController.AjouterProduitCommandeFournisseur(Entities.Models.ProduitCommandeFournisseur)">
+            <summary>
+            Creer un(e) ProduitCommandeFournisseur
+            </summary>
+            <returns></returns>
+            <param name="produitcommandefournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitCommandeFournisseurController.MAJProduitCommandeFournisseur(System.Int32,Entities.Models.ProduitCommandeFournisseur)">
+            <summary>
+            Mise à jour d'un(e) ProduitCommandeFournisseur
+            </summary>
+            <returns></returns>
+            <param name="idproduitcommandefournisseur"></param>
+            <param name="produitcommandefournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitCommandeFournisseurController.SupprimerProduitCommandeFournisseur(System.Int32)">
+            <summary>
+            Suppression d'un(e) ProduitCommandeFournisseur
+            </summary>
+            <returns></returns>
+            <param name="idproduitcommandefournisseur"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitCommandeFournisseurController.GetProduitCommandeFournisseurCompte">
+            <summary>
+            Retourne le total d'enregistrement de ProduitCommandeFournisseur
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ProduitController.GetAllProduitsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Produits avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.ProduitController.GetAllProduits">
+            <summary>
+            Afficher tous les Produits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ProduitController.GetListAllProduits">
+            <summary>
+            Afficher la liste de tous les Produits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ProduitController.GetListAllProduitsById(System.Int32)">
+            <summary>
+            Afficher la liste de Produits en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitController.GetProduitById(System.Int32)">
+            <summary>
+            Afficher un(e) Produit en particulier
+            </summary>
+            <returns></returns>
+            <param name="idProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitController.AjouterProduit(Entities.Models.Produit)">
+            <summary>
+            Creer un(e) Produit
+            </summary>
+            <returns></returns>
+            <param name="produit"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitController.MAJProduit(System.Int32,Entities.Models.Produit)">
+            <summary>
+            Mise à jour d'un(e) Produit
+            </summary>
+            <returns></returns>
+            <param name="idproduit"></param>
+            <param name="produit"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitController.SupprimerProduit(System.Int32)">
+            <summary>
+            Suppression d'un(e) Produit
+            </summary>
+            <returns></returns>
+            <param name="idproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.ProduitController.GetProduitCompte">
+            <summary>
+            Retourne le total d'enregistrement de Produit
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ServiceController.GetAllServicesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Services avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.ServiceController.GetAllServices">
+            <summary>
+            Afficher tous les Services
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ServiceController.GetListAllServices">
+            <summary>
+            Afficher la liste de tous les Services
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ServiceController.GetListAllServicesById(System.Int32)">
+            <summary>
+            Afficher la liste de Services en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idService"></param>
+        </member>
+        <member name="M:Principal.Controllers.ServiceController.GetServiceById(System.Int32)">
+            <summary>
+            Afficher un(e) Service en particulier
+            </summary>
+            <returns></returns>
+            <param name="idService"></param>
+        </member>
+        <member name="M:Principal.Controllers.ServiceController.AjouterService(Entities.Models.Service)">
+            <summary>
+            Creer un(e) Service
+            </summary>
+            <returns></returns>
+            <param name="service"></param>
+        </member>
+        <member name="M:Principal.Controllers.ServiceController.MAJService(System.Int32,Entities.Models.Service)">
+            <summary>
+            Mise à jour d'un(e) Service
+            </summary>
+            <returns></returns>
+            <param name="idservice"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:Principal.Controllers.ServiceController.SupprimerService(System.Int32)">
+            <summary>
+            Suppression d'un(e) Service
+            </summary>
+            <returns></returns>
+            <param name="idservice"></param>
+        </member>
+        <member name="M:Principal.Controllers.ServiceController.GetServiceCompte">
+            <summary>
+            Retourne le total d'enregistrement de Service
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.SourceController.GetAllSourcesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Sources avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.SourceController.GetAllSources">
+            <summary>
+            Afficher tous les Sources
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.SourceController.GetListAllSources">
+            <summary>
+            Afficher la liste de tous les Sources
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.SourceController.GetListAllSourcesById(System.Int32)">
+            <summary>
+            Afficher la liste de Sources en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idSource"></param>
+        </member>
+        <member name="M:Principal.Controllers.SourceController.GetSourceById(System.Int32)">
+            <summary>
+            Afficher un(e) Source en particulier
+            </summary>
+            <returns></returns>
+            <param name="idSource"></param>
+        </member>
+        <member name="M:Principal.Controllers.SourceController.AjouterSource(Entities.Models.Source)">
+            <summary>
+            Creer un(e) Source
+            </summary>
+            <returns></returns>
+            <param name="source"></param>
+        </member>
+        <member name="M:Principal.Controllers.SourceController.MAJSource(System.Int32,Entities.Models.Source)">
+            <summary>
+            Mise à jour d'un(e) Source
+            </summary>
+            <returns></returns>
+            <param name="idsource"></param>
+            <param name="source"></param>
+        </member>
+        <member name="M:Principal.Controllers.SourceController.SupprimerSource(System.Int32)">
+            <summary>
+            Suppression d'un(e) Source
+            </summary>
+            <returns></returns>
+            <param name="idsource"></param>
+        </member>
+        <member name="M:Principal.Controllers.SourceController.GetSourceCompte">
+            <summary>
+            Retourne le total d'enregistrement de Source
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.SousFamilleController.GetAllSousFamillesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les SousFamilles avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.SousFamilleController.GetAllSousFamilles">
+            <summary>
+            Afficher tous les SousFamilles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.SousFamilleController.GetListAllSousFamilles">
+            <summary>
+            Afficher la liste de tous les SousFamilles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.SousFamilleController.GetListAllSousFamillesById(System.Int32)">
+            <summary>
+            Afficher la liste de SousFamilles en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idSousFamille"></param>
+        </member>
+        <member name="M:Principal.Controllers.SousFamilleController.GetSousFamilleById(System.Int32)">
+            <summary>
+            Afficher un(e) SousFamille en particulier
+            </summary>
+            <returns></returns>
+            <param name="idSousFamille"></param>
+        </member>
+        <member name="M:Principal.Controllers.SousFamilleController.AjouterSousFamille(Entities.Models.SousFamille)">
+            <summary>
+            Creer un(e) SousFamille
+            </summary>
+            <returns></returns>
+            <param name="sousfamille"></param>
+        </member>
+        <member name="M:Principal.Controllers.SousFamilleController.MAJSousFamille(System.Int32,Entities.Models.SousFamille)">
+            <summary>
+            Mise à jour d'un(e) SousFamille
+            </summary>
+            <returns></returns>
+            <param name="idsousfamille"></param>
+            <param name="sousfamille"></param>
+        </member>
+        <member name="M:Principal.Controllers.SousFamilleController.SupprimerSousFamille(System.Int32)">
+            <summary>
+            Suppression d'un(e) SousFamille
+            </summary>
+            <returns></returns>
+            <param name="idsousfamille"></param>
+        </member>
+        <member name="M:Principal.Controllers.SousFamilleController.GetSousFamilleCompte">
+            <summary>
+            Retourne le total d'enregistrement de SousFamille
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.StockProduitController.GetAllStockProduitsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les StockProduits avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.StockProduitController.GetAllStockProduits">
+            <summary>
+            Afficher tous les StockProduits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.StockProduitController.GetListAllStockProduits">
+            <summary>
+            Afficher la liste de tous les StockProduits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.StockProduitController.GetListAllStockProduitsById(System.Int32)">
+            <summary>
+            Afficher la liste de StockProduits en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idStockProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.StockProduitController.GetStockProduitById(System.Int32)">
+            <summary>
+            Afficher un(e) StockProduit en particulier
+            </summary>
+            <returns></returns>
+            <param name="idStockProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.StockProduitController.AjouterStockProduit(Entities.Models.StockProduit)">
+            <summary>
+            Creer un(e) StockProduit
+            </summary>
+            <returns></returns>
+            <param name="stockproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.StockProduitController.MAJStockProduit(System.Int32,Entities.Models.StockProduit)">
+            <summary>
+            Mise à jour d'un(e) StockProduit
+            </summary>
+            <returns></returns>
+            <param name="idstockproduit"></param>
+            <param name="stockproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.StockProduitController.SupprimerStockProduit(System.Int32)">
+            <summary>
+            Suppression d'un(e) StockProduit
+            </summary>
+            <returns></returns>
+            <param name="idstockproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.StockProduitController.GetStockProduitCompte">
+            <summary>
+            Retourne le total d'enregistrement de StockProduit
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.SubstitutionProduitController.GetAllSubstitutionProduitsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les SubstitutionProduits avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.SubstitutionProduitController.GetAllSubstitutionProduits">
+            <summary>
+            Afficher tous les SubstitutionProduits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.SubstitutionProduitController.GetListAllSubstitutionProduits">
+            <summary>
+            Afficher la liste de tous les SubstitutionProduits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.SubstitutionProduitController.GetListAllSubstitutionProduitsById(System.Int32)">
+            <summary>
+            Afficher la liste de SubstitutionProduits en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idSubstitutionProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.SubstitutionProduitController.GetSubstitutionProduitById(System.Int32)">
+            <summary>
+            Afficher un(e) SubstitutionProduit en particulier
+            </summary>
+            <returns></returns>
+            <param name="idSubstitutionProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.SubstitutionProduitController.AjouterSubstitutionProduit(Entities.Models.SubstitutionProduit)">
+            <summary>
+            Creer un(e) SubstitutionProduit
+            </summary>
+            <returns></returns>
+            <param name="substitutionproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.SubstitutionProduitController.MAJSubstitutionProduit(System.Int32,Entities.Models.SubstitutionProduit)">
+            <summary>
+            Mise à jour d'un(e) SubstitutionProduit
+            </summary>
+            <returns></returns>
+            <param name="idsubstitutionproduit"></param>
+            <param name="substitutionproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.SubstitutionProduitController.SupprimerSubstitutionProduit(System.Int32)">
+            <summary>
+            Suppression d'un(e) SubstitutionProduit
+            </summary>
+            <returns></returns>
+            <param name="idsubstitutionproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.SubstitutionProduitController.GetSubstitutionProduitCompte">
+            <summary>
+            Retourne le total d'enregistrement de SubstitutionProduit
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TicketController.GetAllTicketsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Tickets avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.TicketController.GetAllTickets">
+            <summary>
+            Afficher tous les Tickets
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TicketController.GetListAllTickets">
+            <summary>
+            Afficher la liste de tous les Tickets
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TicketController.GetListAllTicketsById(System.Int32)">
+            <summary>
+            Afficher la liste de Tickets en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idTicket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketController.GetTicketById(System.Int32)">
+            <summary>
+            Afficher un(e) Ticket en particulier
+            </summary>
+            <returns></returns>
+            <param name="idTicket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketController.AjouterTicket(Entities.Models.Ticket)">
+            <summary>
+            Creer un(e) Ticket
+            </summary>
+            <returns></returns>
+            <param name="ticket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketController.MAJTicket(System.Int32,Entities.Models.Ticket)">
+            <summary>
+            Mise à jour d'un(e) Ticket
+            </summary>
+            <returns></returns>
+            <param name="idticket"></param>
+            <param name="ticket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketController.SupprimerTicket(System.Int32)">
+            <summary>
+            Suppression d'un(e) Ticket
+            </summary>
+            <returns></returns>
+            <param name="idticket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketController.GetTicketCompte">
+            <summary>
+            Retourne le total d'enregistrement de Ticket
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TicketProduitController.GetAllTicketProduitsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les TicketProduits avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.TicketProduitController.GetAllTicketProduits">
+            <summary>
+            Afficher tous les TicketProduits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TicketProduitController.GetListAllTicketProduits">
+            <summary>
+            Afficher la liste de tous les TicketProduits
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TicketProduitController.GetListAllTicketProduitsById(System.Int32)">
+            <summary>
+            Afficher la liste de TicketProduits en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idTicketProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketProduitController.GetTicketProduitById(System.Int32)">
+            <summary>
+            Afficher un(e) TicketProduit en particulier
+            </summary>
+            <returns></returns>
+            <param name="idTicketProduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketProduitController.AjouterTicketProduit(Entities.Models.TicketProduit)">
+            <summary>
+            Creer un(e) TicketProduit
+            </summary>
+            <returns></returns>
+            <param name="ticketproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketProduitController.MAJTicketProduit(System.Int32,Entities.Models.TicketProduit)">
+            <summary>
+            Mise à jour d'un(e) TicketProduit
+            </summary>
+            <returns></returns>
+            <param name="idticketproduit"></param>
+            <param name="ticketproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketProduitController.SupprimerTicketProduit(System.Int32)">
+            <summary>
+            Suppression d'un(e) TicketProduit
+            </summary>
+            <returns></returns>
+            <param name="idticketproduit"></param>
+        </member>
+        <member name="M:Principal.Controllers.TicketProduitController.GetTicketProduitCompte">
+            <summary>
+            Retourne le total d'enregistrement de TicketProduit
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TypeBCIController.GetAllTypeBCIsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les TypeBCIs avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.TypeBCIController.GetAllTypeBCIs">
+            <summary>
+            Afficher tous les TypeBCIs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TypeBCIController.GetListAllTypeBCIs">
+            <summary>
+            Afficher la liste de tous les TypeBCIs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TypeBCIController.GetListAllTypeBCIsById(System.Int32)">
+            <summary>
+            Afficher la liste de TypeBCIs en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idTypeBCI"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeBCIController.GetTypeBCIById(System.Int32)">
+            <summary>
+            Afficher un(e) TypeBCI en particulier
+            </summary>
+            <returns></returns>
+            <param name="idTypeBCI"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeBCIController.AjouterTypeBCI(Entities.Models.TypeBCI)">
+            <summary>
+            Creer un(e) TypeBCI
+            </summary>
+            <returns></returns>
+            <param name="typebci"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeBCIController.MAJTypeBCI(System.Int32,Entities.Models.TypeBCI)">
+            <summary>
+            Mise à jour d'un(e) TypeBCI
+            </summary>
+            <returns></returns>
+            <param name="idtypebci"></param>
+            <param name="typebci"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeBCIController.SupprimerTypeBCI(System.Int32)">
+            <summary>
+            Suppression d'un(e) TypeBCI
+            </summary>
+            <returns></returns>
+            <param name="idtypebci"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeBCIController.GetTypeBCICompte">
+            <summary>
+            Retourne le total d'enregistrement de TypeBCI
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TypeCatalogueController.GetAllTypeCataloguesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les TypeCatalogues avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.TypeCatalogueController.GetAllTypeCatalogues">
+            <summary>
+            Afficher tous les TypeCatalogues
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TypeCatalogueController.GetListAllTypeCatalogues">
+            <summary>
+            Afficher la liste de tous les TypeCatalogues
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TypeCatalogueController.GetListAllTypeCataloguesById(System.Int32)">
+            <summary>
+            Afficher la liste de TypeCatalogues en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idTypeCatalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeCatalogueController.GetTypeCatalogueById(System.Int32)">
+            <summary>
+            Afficher un(e) TypeCatalogue en particulier
+            </summary>
+            <returns></returns>
+            <param name="idTypeCatalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeCatalogueController.AjouterTypeCatalogue(Entities.Models.TypeCatalogue)">
+            <summary>
+            Creer un(e) TypeCatalogue
+            </summary>
+            <returns></returns>
+            <param name="typecatalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeCatalogueController.MAJTypeCatalogue(System.Int32,Entities.Models.TypeCatalogue)">
+            <summary>
+            Mise à jour d'un(e) TypeCatalogue
+            </summary>
+            <returns></returns>
+            <param name="idtypecatalogue"></param>
+            <param name="typecatalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeCatalogueController.SupprimerTypeCatalogue(System.Int32)">
+            <summary>
+            Suppression d'un(e) TypeCatalogue
+            </summary>
+            <returns></returns>
+            <param name="idtypecatalogue"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeCatalogueController.GetTypeCatalogueCompte">
+            <summary>
+            Retourne le total d'enregistrement de TypeCatalogue
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TypeTicketController.GetAllTypeTicketsPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les TypeTickets avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.TypeTicketController.GetAllTypeTickets">
+            <summary>
+            Afficher tous les TypeTickets
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TypeTicketController.GetListAllTypeTickets">
+            <summary>
+            Afficher la liste de tous les TypeTickets
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.TypeTicketController.GetListAllTypeTicketsById(System.Int32)">
+            <summary>
+            Afficher la liste de TypeTickets en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idTypeTicket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeTicketController.GetTypeTicketById(System.Int32)">
+            <summary>
+            Afficher un(e) TypeTicket en particulier
+            </summary>
+            <returns></returns>
+            <param name="idTypeTicket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeTicketController.AjouterTypeTicket(Entities.Models.TypeTicket)">
+            <summary>
+            Creer un(e) TypeTicket
+            </summary>
+            <returns></returns>
+            <param name="typeticket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeTicketController.MAJTypeTicket(System.Int32,Entities.Models.TypeTicket)">
+            <summary>
+            Mise à jour d'un(e) TypeTicket
+            </summary>
+            <returns></returns>
+            <param name="idtypeticket"></param>
+            <param name="typeticket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeTicketController.SupprimerTypeTicket(System.Int32)">
+            <summary>
+            Suppression d'un(e) TypeTicket
+            </summary>
+            <returns></returns>
+            <param name="idtypeticket"></param>
+        </member>
+        <member name="M:Principal.Controllers.TypeTicketController.GetTypeTicketCompte">
+            <summary>
+            Retourne le total d'enregistrement de TypeTicket
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.UniteController.GetAllUnitesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les Unites avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.UniteController.GetAllUnites">
+            <summary>
+            Afficher tous les Unites
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.UniteController.GetListAllUnites">
+            <summary>
+            Afficher la liste de tous les Unites
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.UniteController.GetListAllUnitesById(System.Int32)">
+            <summary>
+            Afficher la liste de Unites en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idUnite"></param>
+        </member>
+        <member name="M:Principal.Controllers.UniteController.GetUniteById(System.Int32)">
+            <summary>
+            Afficher un(e) Unite en particulier
+            </summary>
+            <returns></returns>
+            <param name="idUnite"></param>
+        </member>
+        <member name="M:Principal.Controllers.UniteController.AjouterUnite(Entities.Models.Unite)">
+            <summary>
+            Creer un(e) Unite
+            </summary>
+            <returns></returns>
+            <param name="unite"></param>
+        </member>
+        <member name="M:Principal.Controllers.UniteController.MAJUnite(System.Int32,Entities.Models.Unite)">
+            <summary>
+            Mise à jour d'un(e) Unite
+            </summary>
+            <returns></returns>
+            <param name="idunite"></param>
+            <param name="unite"></param>
+        </member>
+        <member name="M:Principal.Controllers.UniteController.SupprimerUnite(System.Int32)">
+            <summary>
+            Suppression d'un(e) Unite
+            </summary>
+            <returns></returns>
+            <param name="idunite"></param>
+        </member>
+        <member name="M:Principal.Controllers.UniteController.GetUniteCompte">
+            <summary>
+            Retourne le total d'enregistrement de Unite
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ZoneStockageController.GetAllZoneStockagesPages(Principal.Divers.Pagination.PaginationFilter)">
+            <summary>
+            Afficher la liste de toutes les ZoneStockages avec pagination
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Principal.Controllers.ZoneStockageController.GetAllZoneStockages">
+            <summary>
+            Afficher tous les ZoneStockages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ZoneStockageController.GetListAllZoneStockages">
+            <summary>
+            Afficher la liste de tous les ZoneStockages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Controllers.ZoneStockageController.GetListAllZoneStockagesById(System.Int32)">
+            <summary>
+            Afficher la liste de ZoneStockages en fonction de  l'Id
+            </summary>
+            <returns></returns>
+            <param name="idZoneStockage"></param>
+        </member>
+        <member name="M:Principal.Controllers.ZoneStockageController.GetZoneStockageById(System.Int32)">
+            <summary>
+            Afficher un(e) ZoneStockage en particulier
+            </summary>
+            <returns></returns>
+            <param name="idZoneStockage"></param>
+        </member>
+        <member name="M:Principal.Controllers.ZoneStockageController.AjouterZoneStockage(Entities.Models.ZoneStockage)">
+            <summary>
+            Creer un(e) ZoneStockage
+            </summary>
+            <returns></returns>
+            <param name="zonestockage"></param>
+        </member>
+        <member name="M:Principal.Controllers.ZoneStockageController.MAJZoneStockage(System.Int32,Entities.Models.ZoneStockage)">
+            <summary>
+            Mise à jour d'un(e) ZoneStockage
+            </summary>
+            <returns></returns>
+            <param name="idzonestockage"></param>
+            <param name="zonestockage"></param>
+        </member>
+        <member name="M:Principal.Controllers.ZoneStockageController.SupprimerZoneStockage(System.Int32)">
+            <summary>
+            Suppression d'un(e) ZoneStockage
+            </summary>
+            <returns></returns>
+            <param name="idzonestockage"></param>
+        </member>
+        <member name="M:Principal.Controllers.ZoneStockageController.GetZoneStockageCompte">
+            <summary>
+            Retourne le total d'enregistrement de ZoneStockage
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Divers.FileWriter.FileWriter.CheckIfImageFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Method to check if file is image file
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Principal.Divers.FileWriter.FileWriter.WriteFile(Principal.Divers.FileWriter.FichierModel,System.String)">
+            <summary>
+            Method to write file onto the disk
+            </summary>
+            <param name="f"></param>
+            <param name="dossierDestination"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
